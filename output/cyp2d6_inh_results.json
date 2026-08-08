@@ -1,0 +1,82 @@
+{
+  "endpoint": "cyp2d6_veith",
+  "metric": "AUPRC",
+  "split": "official TDC scaffold split",
+  "sota": 0.79,
+  "protocol": "frozen leg: 5 independent runs, each = mean of 3 disjoint CatBoost seeds (MapLight 2580d + 4x300d frozen Hu2020 GIN embeddings, iter=800, lr=0.1, ss=0.6, cw=sqrt)",
+  "mode": "reproduce",
+  "runs": [
+    {
+      "run": 1,
+      "seeds": [
+        1,
+        2,
+        3
+      ],
+      "auprc": 0.8201281368935892
+    },
+    {
+      "run": 2,
+      "seeds": [
+        4,
+        5,
+        6
+      ],
+      "auprc": 0.8206297341990815
+    },
+    {
+      "run": 3,
+      "seeds": [
+        7,
+        8,
+        9
+      ],
+      "auprc": 0.8233433368286543
+    },
+    {
+      "run": 4,
+      "seeds": [
+        10,
+        11,
+        12
+      ],
+      "auprc": 0.8202027614952813
+    },
+    {
+      "run": 5,
+      "seeds": [
+        13,
+        14,
+        15
+      ],
+      "auprc": 0.8197458694230644
+    }
+  ],
+  "individual_auprcs": [
+    0.8201281368935892,
+    0.8206297341990815,
+    0.8233433368286543,
+    0.8202027614952813,
+    0.8197458694230644
+  ],
+  "run_mean_auprc": 0.8208099677679341,
+  "run_std_auprc": 0.0012974082644618308,
+  "tdc_evaluate_many": {
+    "mean": 0.821,
+    "std": 0.001,
+    "note": "TDC rounds mean/std to 3 decimals"
+  },
+  "gap_to_sota": 0.030999999999999917,
+  "beat_sota": true,
+  "dataset_sha256": "895138997ec31962a66628e700c61167a9641cbf545ab4c0bb1a1661be0ca79d",
+  "environment": {
+    "python": "3.12.13",
+    "platform": "Windows-11-10.0.28000-SP0",
+    "numpy": "2.4.6",
+    "scikit_learn": "1.9.0",
+    "rdkit": "2024.09.6",
+    "catboost": "1.2.10"
+  },
+  "runtime_seconds": 0.1389923095703125,
+  "recorded_at": "2026-08-08T19:41:54.181284"
+}

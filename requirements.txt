@@ -1,0 +1,14 @@
+numpy==2.4.6
+pandas==3.0.3
+scipy==1.18.0
+scikit-learn==1.9.0
+rdkit==2024.9.6
+catboost==1.2.10
+torch==2.10.0
+requests==2.34.2
+tqdm==4.68.4
+fuzzywuzzy==0.18.0
+setuptools==69.5.1
+huggingface-hub==1.23.0
+openpyxl==3.1.5
+pydantic==2.13.4
